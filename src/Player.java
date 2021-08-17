@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 
 public class Player {
+    int points;
+    ArrayList<Character> cardList = new ArrayList<>();
+
     public Player() {
     }
 
@@ -11,10 +14,8 @@ public class Player {
         if (type.equals("Slave")) {
             giveSlaveCards();
         }
+        points = 0;
     }
-
-    int points;
-    ArrayList<Character> cardList = new ArrayList<>();
 
     int returnPoints() {
         return points;
